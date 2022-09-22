@@ -1,0 +1,13 @@
+#! python
+a = int(input('put your number here: '))
+
+for f in range(1, a + 1):
+    for d in range(2, f + 1):
+        if f % d != 0 and d != f:
+            continue
+        if f % d == 0 and f != d:
+            break
+        if f / d == 1:
+            #print(f, 'is prime')
+            if a % f == 0 and a != f:
+                print (f, 'is yes')
